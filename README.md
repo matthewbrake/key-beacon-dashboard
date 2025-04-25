@@ -1,8 +1,25 @@
+
 # Welcome to your Lovable project
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/68b8fe9f-0ca1-497b-8d79-27b3ae9af2e9
+
+## Docker Setup
+
+This project can be run as a Docker container. Follow these steps to build and run the container:
+
+```sh
+# Build and start the container
+docker-compose up -d
+
+# Stop the container
+docker-compose down
+```
+
+Key files can be placed in the `keys` directory which is mounted as a volume in the container.
+
+**Note**: You may want to manually add `keys/*` to your `.gitignore` file to avoid committing key files to your repository.
 
 ## How can I edit this code?
 
@@ -59,10 +76,13 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Docker for containerization
 
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/68b8fe9f-0ca1-497b-8d79-27b3ae9af2e9) and click on Share -> Publish.
+
+Alternatively, you can use the Docker setup described above to deploy the application on any system that supports Docker.
 
 ## Can I connect a custom domain to my Lovable project?
 
